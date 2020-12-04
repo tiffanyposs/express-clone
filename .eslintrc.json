@@ -4,8 +4,11 @@
 		"node": true,
 		"es6": true
 	},
+	"parser": "@babel/eslint-parser",
 	"parserOptions": {
 		"ecmaVersion": 2019
 	},
-	"rules": {}
+	"rules": {
+		"no-param-reassign": ["error", { "props": false }]
+	}
 }

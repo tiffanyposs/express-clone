@@ -1,12 +1,8 @@
-import http from 'http';
+import createServer from './createServer';
 import listen from './listen';
 
 const express = () => {
-  const server = http.createServer((req, res) => {
-    res.statusCode = 200;
-    res.setHeader('Content-Type', 'text/plain');
-    res.end('Hello World');
-  });
+  const server = createServer();
 
   return {
     listen: listen(server),

@@ -1,7 +1,7 @@
 {
-  "name": "express-copy",
+  "name": "express-clone",
   "version": "1.0.0",
-  "description": "",
+  "description": "Clone of express.js",
   "main": "index.js",
   "scripts": {
     "dev": "npm run start",

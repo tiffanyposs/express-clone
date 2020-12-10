@@ -8,6 +8,10 @@ app.get('/helloworld', (req, res) => {
   res.end('Hello World');
 });
 
+app.post('/helloworld', (req, res) => {
+  res.end(req.body);
+});
+
 // todo add support for host
 app.listen(port, () => {
   console.log(`You are listening on port ${port}`);
